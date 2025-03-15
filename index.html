@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Walme Auto Bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Walme Auto Bot</h1>
+      <p>自动完成Walme空投任务的工具，支持多账户和代理</p>
+    </header>
+    
+    <div class="main-content">
+      <div class="sidebar">
+        <div class="control-panel">
+          <h2>控制面板</h2>
+          <div class="status-indicator">
+            <div class="status-dot stopped" id="status-dot"></div>
+            <span id="status-text" class="status-stopped">已停止</span>
+          </div>
+          <div class="control-buttons">
+            <button class="start-btn" id="start-btn">启动机器人</button>
+            <button class="stop-btn" id="stop-btn" disabled>停止机器人</button>
+          </div>
+        </div>
+        
+        <div class="tokens-panel">
+          <h2>令牌管理</h2>
+          <p>每行输入一个令牌</p>
+          <textarea id="tokens-textarea" class="textarea" placeholder="在此处粘贴您的令牌..."></textarea>
+          <div class="control-buttons">
+            <button id="save-tokens-btn">保存令牌</button>
+            <label for="import-tokens" class="file-label">导入令牌</label>
+            <input type="file" id="import-tokens" class="file-input">
+          </div>
+        </div>
+        
+        <div class="proxies-panel">
+          <h2>代理管理</h2>
+          <p>支持HTTP、SOCKS4、SOCKS5代理</p>
+          <textarea id="proxies-textarea" class="textarea" placeholder="在此处粘贴您的代理..."></textarea>
+          <div class="control-buttons">
+            <button id="save-proxies-btn">保存代理</button>
+            <label for="import-proxies" class="file-label">导入代理</label>
+            <input type="file" id="import-proxies" class="file-input">
+          </div>
+        </div>
+      </div>
+      
+      <div class="log-panel">
+        <h2>运行日志</h2>
+        <div class="log-container" id="log-container"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>

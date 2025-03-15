@@ -130,4 +130,6 @@ npm run bot
 - 检查 Node.js 版本是否符合要求
 - 查看控制台错误信息，解决相应问题
 
+原作者：https://github.com/airdropinsiders/Walme-Auto-Bot
+
 本工具仅供学习和研究使用，使用者应自行承担使用本工具的一切风险和责任。开发者不对因使用本工具而导致的任何损失或问题负责。
